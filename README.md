@@ -18,6 +18,6 @@ It is a crude way to send automated beacons via Meshtastic.
 `crontab -e`
 
 #### syntax
-mesh_beacon.sh mshtastic_channel_number beacon_message
+mesh_beacon.sh meshtastic_channel_number beacon_message
 
 `@hourly bash /path/to/mesh_beacon/beacon.sh 0 "We are currently using these settings on the mesh: "`
