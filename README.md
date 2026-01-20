@@ -7,16 +7,17 @@ It is a crude way to send automated beacons via Meshtastic.
 ## How do I use it?
 
 ### meshtasticd
+[meshtasticd](https://meshtastic.org/docs/software/linux/installation/)
 
 ### make sure the bash script is executable:
 
-sudo chmod +x mesh_beacon/beacon.sh
+`sudo chmod +x mesh_beacon/beacon.sh`
 
 ### cron
 
-crontab -e
+`crontab -e`
 
 #### syntax
-mesh_beacon.sh [mshtastic channel number] [beacon message]
+mesh_beacon.sh mshtastic_channel_number beacon_message
 
-@hourly bash /path/to/mesh_beacon/beacon.sh 0 "We are currently using these settings on the mesh: "
+`@hourly bash /path/to/mesh_beacon/beacon.sh 0 "We are currently using these settings on the mesh: "`
